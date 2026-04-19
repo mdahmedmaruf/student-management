@@ -15,15 +15,6 @@ class Student:
     def get_student_id(self):
         return self.__student_id
 
-    # def get_name(self):
-    #     return self.__name
-
-    # def get_department(self):
-    #     return self.__department
-
-    # def get_enroll_status(self):
-    #     return self.__is_enrolled
-
     def enroll_student(self):
         if not self.__is_enrolled:
             self.__is_enrolled = True
@@ -45,12 +36,9 @@ class Student:
 
 
 s_db = StudentDatabse()
-s1 = Student("S101", "Ahmed", "CSE", True)
-s2 = Student("S102", "Karim", "EEE", True)
-s3 = Student("S103", "Rahim", "Math", False)
-s_db.add_student(s1)
-s_db.add_student(s2)
-s_db.add_student(s3)
+s_db.add_student(Student("S101", "Ahmed", "CSE", True))
+s_db.add_student(Student("S102", "Karim", "EEE", True))
+s_db.add_student(Student("S103", "Rahim", "Math", False))
 
 
 def menu():
